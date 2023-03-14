@@ -128,7 +128,7 @@ export default function Product({ data }) {
 
   return (
     <>
-      <Link href="" sx={{ color: "#00254F" }} underline="none" key={data.id}>
+      <Link href="https://www.google.com/" target={"_blank"} sx={{ color: "#00254F" }} underline="none" key={data.id}>
         <ProductCart>
           <ProductImageWrapper>
             <ProductImage src={productData?.imageUrl} />
