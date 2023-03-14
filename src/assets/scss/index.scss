@@ -1,0 +1,12 @@
+@import './variables';
+@import './reset.scss';
+@import './layouts/header';
+@import './layouts/navigation';
+@import './layouts/footer';
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
