@@ -1,9 +1,10 @@
+import SubMenuImageSource from "/src/assets/images/sub-menu-image.png";
 export const navigationData = [
   {
     id: 1,
     title: "Menu Item 1",
     url: "/",
-    image: "src/assets/images/sub-menu-image.png",
+    image: SubMenuImageSource,
     subMenu: [
       {
         subTitle: "Header 1",
