@@ -92,7 +92,7 @@ export default function Headers() {
             <HeaderWrapper>
               <Logo>
                 <Link href="">
-                  <img src={"src/assets/images/logo.png"} alt="logo" />
+                  <img src={"../src/assets/images/logo.png"} alt="logo" />
                 </Link>
                 <Button
                   variant="text"

@@ -104,7 +104,7 @@ export default function Footer() {
               <Grid item xs={9} sm={7} md={7} lg={7}>
                 <Box component="div">
                   <FooterLogo
-                    src="src/assets/images/footer-logo.png"
+                    src="../src/assets/images/footer-logo.png"
                     alt="footer-logo"
                   />
                 </Box>

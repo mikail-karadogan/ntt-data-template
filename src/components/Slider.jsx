@@ -20,16 +20,16 @@ export default function Sliders() {
       <Box component={'div'} className="main-slider">
         <Slider {...settings}>
           <Box component={'div'}>
-              <img src="src/assets/images/slider.png" alt="slider" />
+              <img src="../src/assets/images/slider.png" alt="slider" />
           </Box>
           <Box component={'div'}>
-            <img src="src/assets/images/slider-2.png" alt="slider" />
+            <img src="../src/assets/images/slider-2.png" alt="slider" />
           </Box>
           <Box component={'div'}>
-          <img src="src/assets/images/slider-3.png" alt="slider" />
+          <img src="../src/assets/images/slider-3.png" alt="slider" />
           </Box>
           <Box component={'div'}>
-          <img src="src/assets/images/slider-4.png" alt="slider" />
+          <img src="../src/assets/images/slider-4.png" alt="slider" />
           </Box>
         </Slider>
       </Box>
