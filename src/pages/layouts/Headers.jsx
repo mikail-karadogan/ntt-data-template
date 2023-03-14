@@ -14,6 +14,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import Navigation from "./Navigation";
 import NavigatinModal from "../modals/NavigationModal";
+import Logo from "/src/assets/images/logo.png";
 
 const HeaderTop = styled("div")(({ theme }) => ({
   width: "100%",
@@ -92,7 +93,7 @@ export default function Headers() {
             <HeaderWrapper>
               <Logo>
                 <Link href="">
-                  <img src={"../src/assets/images/logo.png"} alt="logo" />
+                  <img src={Logo} alt="logo" />
                 </Link>
                 <Button
                   variant="text"
