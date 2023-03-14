@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, Link } from "@mui/material";
 import { styled } from "@mui/styles";
 import { Box } from "@mui/system";
 import React from "react";
@@ -25,12 +25,13 @@ export default function NavigatinModal({setNavigationModalActive}) {
 
   const NavigationModalListItem = styled("li")({});
 
-  const NavigationModalLink = styled("a")({
+  const NavigationModalLink = styled(Link)({
     fontSize: "24px",
     fontWeight: 500,
     color: "rgba(0, 0, 0, 1)",
     marginBottom: "24px",
     display: "block",
+    textDecoration: "none"
   });
 
   const NavigationHeader = styled(Box)({

@@ -5,7 +5,6 @@ import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import "../../assets/scss/product-slider.scss";
 import { Box, Grid, Typography } from "@mui/material";
 import Product from "./Product";
-import { useEffect } from "react";
 
 export default function ProductSlider({ productData }) {
   const settings = {
@@ -23,7 +22,9 @@ export default function ProductSlider({ productData }) {
         <Slider {...settings} className="product-slider">
           {productData.map((item) => {
             return (
+              <Box component="div" key={item.id}>
                 <Product data={item} />
+              </Box>
             );
           })}
         </Slider>

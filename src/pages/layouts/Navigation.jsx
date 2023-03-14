@@ -1,12 +1,12 @@
 import React from "react";
-import { Box, Grid, MenuItem, Select, Typography } from "@mui/material";
+import { Box, Grid, Link, MenuItem, Select, Typography } from "@mui/material";
 import { Container, styled } from "@mui/system";
 import { navigationData } from "./navigationData";
 import { useState } from "react";
 
 const NavList = styled("ul")(({ theme }) => ({
   display: "flex",
-  justifyContent: "center",
+  justifyContent: "space-between",
   flexWrap: "wrap",
   maxWidth: "1200px",
   margin: "auto",
@@ -37,8 +37,10 @@ const NavListItemLink = styled("div")(({ theme }) => ({
   },
 }));
 
-const NavListItemLinkTitle = styled("a")(({ theme }) => ({
+const NavListItemLinkTitle = styled(Link)(({ theme }) => ({
   color: "#6a6d70",
+  textDecoration: "none",
+  cursor: "pointer"
 }));
 
 const Sub = styled("div")(({ theme }) => ({
@@ -67,8 +69,9 @@ const SubMenuItem = styled("li")(({ theme }) => ({
   marginBottom: "10px",
 }));
 
-const SubMenuItemLink = styled("a")(({ theme }) => ({
+const SubMenuItemLink = styled(Link)(({ theme }) => ({
   color: "#000000",
+  textDecoration: "none"
 }));
 
 const StyledSelectBox = styled(Select)({

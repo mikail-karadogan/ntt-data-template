@@ -33,6 +33,7 @@ const FooterSubContentLink = styled(Link)({
   marginBottom: "12px",
   display: "block",
   textTransform: "none",
+  textDecoration: "none"
 });
 
 const FooterContentTitle = styled(Typography)({
@@ -89,6 +90,7 @@ const FooterSignupButton = styled(Button)(({ theme }) => ({
 
 const FooterSocialItem = styled(Link)({
   marginRight: "30px",
+  textDecoration: "none",
   "&:last-child": {
     marginRight: "0px",
   },

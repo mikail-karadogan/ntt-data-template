@@ -68,6 +68,10 @@ export default function ProductWrapper() {
     setVisibleProduct(4);
   }, [likedStatus]);
 
+  useEffect(()=> {
+    favoriteProducts.length == 0 && setLikedStatus(false)
+  }, [favoriteProducts])
+
   return (
     <>
       <Box component="section" mt={7}>
@@ -79,21 +83,29 @@ export default function ProductWrapper() {
                 <FavoriteBorderIcon className="favorite-icon" />
                 {favoriteProducts.length} Ürün
               </Box>
-              <Button
-                variant="contained"
-                className="button-liked"
-                onClick={() => likedProducts()}
-              >
-                Beğenilenler
-              </Button>
+              {favoriteProducts.length > 0 && (
+                <Button
+                  variant="contained"
+                  className="button-liked"
+                  onClick={() => likedProducts()}
+                >
+                  Beğenilenler
+                </Button>
+              )}
             </FavoritSection>
           </ProductWrapperHead>
-          <Grid container mt={4} rowSpacing={0} columnSpacing={3} sx={{
-            display: {
-              xs: "none",
-              sm: "flex"
-            }
-          }}>
+          <Grid
+            container
+            mt={4}
+            rowSpacing={0}
+            columnSpacing={3}
+            sx={{
+              display: {
+                xs: "none",
+                sm: "flex",
+              },
+            }}
+          >
             {(!likedStatus ? products : favoriteProducts)
               .slice(0, visibleProduct)
               .map((product, index) => {
@@ -133,13 +145,23 @@ export default function ProductWrapper() {
               )}
             </Grid>
           </Grid>
-          <Box component="div" mt={4} sx={{
-            display: {
-              xs: "block",
-              sm: "none"
-            }
-          }}>
-            <ProductSlider productData = {(!likedStatus ? products.slice(0, 4) : favoriteProducts.slice(0, 4))} />
+          <Box
+            component="div"
+            mt={4}
+            sx={{
+              display: {
+                xs: "block",
+                sm: "none",
+              },
+            }}
+          >
+            <ProductSlider
+              productData={
+                !likedStatus
+                  ? products.slice(0, 4)
+                  : favoriteProducts.slice(0, 4)
+              }
+            />
           </Box>
         </Container>
       </Box>

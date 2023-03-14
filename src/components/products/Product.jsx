@@ -7,7 +7,6 @@ import {
   setFavoriteProducts,
   deletedFavoriteProduct,
 } from "../../store/productSlice";
-import { useEffect } from "react";
 
 const ProductCart = styled("div")(({ theme }) => ({
   width: "100%",
@@ -50,6 +49,7 @@ const FavoriteWrapper = styled(Link)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  textDecoration: "none",
   "&.active": {
     backgroundColor: "red",
   },

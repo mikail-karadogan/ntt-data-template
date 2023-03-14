@@ -1,5 +1,4 @@
 
-import { useEffect } from "react"
 import ProductWrapper from "./components/products/ProductWrapper"
 import Sliders from "./components/Slider"
 import Footer from "./pages/layouts/Footer"
