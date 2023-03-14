@@ -12,7 +12,7 @@ import { Box, Container, styled } from "@mui/system";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import footerLogo from "src/assets/images/footer-logo"
+import FooterLogo from "/src/assets/images/footer-logo";
 
 const FooterContentWrapper = styled("ul")(({theme})=>({
   display: "flex",
@@ -105,7 +105,7 @@ export default function Footer() {
               <Grid item xs={9} sm={7} md={7} lg={7}>
                 <Box component="div">
                   <FooterLogo
-                    src={footerLogo}
+                    src={FooterLogo}
                     alt="footer-logo"
                   />
                 </Box>
