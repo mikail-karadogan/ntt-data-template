@@ -12,7 +12,7 @@ import { Box, Container, styled } from "@mui/system";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import footerLogo from "../../assets/images/footer-logo"
+import footerLogo from "src/assets/images/footer-logo"
 
 const FooterContentWrapper = styled("ul")(({theme})=>({
   display: "flex",
