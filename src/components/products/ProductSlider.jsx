@@ -20,10 +20,10 @@ export default function ProductSlider({ productData }) {
     <>
       <Box component={"div"} mb={3}>
         <Slider {...settings} className="product-slider">
-          {productData.map((item) => {
+          {productData.map((item, index) => {
             return (
               <Box component="div" key={item.id}>
-                <Product data={item} />
+                <Product data={item} key={item.id} />
               </Box>
             );
           })}
